@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/ee9db95eb6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><i class="fa-solid fa-school fa-2xl" id="fafa"></i></a>
+            <h2>English-school</h2>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark" id="icon" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">料金</a></li>
+                    <li><a href="">スタッフ紹介</a></li>
+                    <li><a href="">本教材</a></li>
+                    <li><a href="">ブログ</a></li>
+                    <li><a href="">よくある質問</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="icon" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>English-Labo</h1>
+            <p>あなたが楽しみながら英語学習を上達できるように、私たちは全力でサポートします</p>
+            <a href="" class="hero-btn">詳しく見てみる</a>
+        </div>
+    </header>
+
+
+    <section id="course">
+        <h2>コースの紹介</h2>
+        <p>あなたに合った学習スタイルで進めることができます。</p>
+        <div class="contents">
+            <div class="content">
+                <h3>グループレッスン</h3>
+                <p>最大４人でのディスカッションをメインとした実践形式での英会話レッスン。</p>
+            </div>
+
+            <div class="content">
+                <h3>マンツーマンレッスン</h3>
+                <p>現在のあなたの英語能力に合わせて最適な学習プランをご用意させていただき、英語経験豊富な講師たちとマンツーマンでレッスンを受けることができます。</p>
+            </div>
+
+            <div class="content">
+                <h3>オンラインレッスン</h3>
+                <p>通うことができない場合でも弊社の英会話サービスを受けることができます。PCもしくはスマートフォン、タブレットでご受講可能です。</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="campus">
+        <h2>各教室のご案内</h2>
+
+        <div class="contents">
+            <div class="campus-content">
+                <img src="img002/tokyo22.jpeg">
+                <div class="layer">
+                    <h3>東京</h3>
+                </div>
+            </div>
+            <div class="campus-content">
+                <img src="img002/osaka22.jpeg">
+                <div class="layer">
+                    <h3>大阪</h3>
+                </div>
+            </div>
+            <div class="campus-content">
+                <img src="img002/okinawa022.jpeg">
+                <div class="layer">
+                    <h3>沖縄</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="lesson">
+        <h2>あなたに合った教材を選ぶことができます</h2>
+        <p></p>
+
+        <div class="contents">
+            <div class="lesson-content">
+                <img src="img002/people-talk.jpeg">
+                <h3>日常英会話</h3>
+                <p>実際に英語圏で使われている生の英会話に触れることができます！実用的で生きている英語を身につけることができます。</p>
+            </div>
+            <div class="lesson-content">
+                <img src="img002/people-business.jpeg">
+                <h3>ビジネス英会話</h3>
+                <p>ビジネスシーンで使われている英会話を中心に学ぶことができます。最新のビジネスの話題を中心にディスカッションを行います。</p>
+            </div>
+            <div class="lesson-content">
+                <img src="img002/photo-toeic.jpeg">
+                <h3>TOEIC対策</h3>
+                <p>TOEIC対策もバッチリ！プロの講師が勉強方法と解き方を詳しくレクチャーしていきます。</p>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <section id="cta">
+        <h2>Genius is 1 percent inspiration and 99 percent perspiration.</h2>
+        <a href="" class="hero-btn">お申し込みはこちら</a>
+    </section>
+
+    <footer>
+        <h4>&copy;2023 English-Labo</h4>
+        <div class="icons">
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-facebook"></i>
+        </div>
+    </footer>
+
+
+    
+    <script>
+        const navlinks = document.getElementById("navlinks");
+    
+        function showMenu() {
+            navlinks.style.right = "0";
+        }
+        function hideMenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
